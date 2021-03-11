@@ -17,7 +17,7 @@
 	
 	function get($query)
 	{
-		echo "ooo";
+		
 		global $serverName;
 		global $userName;
 		global $password;
