@@ -15,7 +15,7 @@
 		while($row = mysqli_fetch_array($result)){
 	
 
-	echo "<p> $row[roomname]</p>";
+	echo "<p> $row[roomname]</p><br>";
 
 		}
 	}
