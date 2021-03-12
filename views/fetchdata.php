@@ -38,14 +38,15 @@
 			      	 echo "<img src= '$row[pic]' width='278px;' height='180px;' style='border:solid black 1px; padding:2px;  float:left; margin-right:10px; margin-bottom:5px;'>";
 					
 
-			        echo "<p class='boxhotnm'>$row[roomname]</p><br>";
+			        echo "<p class='boxhotnm'>$row[roomname]</p>";
+
+			       echo "<h6> &nbsp Price: $row[price] </h6>";
 
 			      	echo '</div>';
 			      echo '</div>';
 			  echo '</div>';
 			  $i++;
 			  if ($i % 3 == 0) {echo '</div><div class="row">';}
-
 
 		}
 

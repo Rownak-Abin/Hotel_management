@@ -89,7 +89,12 @@
 			      	 echo "<img src= '$room[pic]' width='278px;' height='180px;' style='border:solid black 1px; padding:2px;  float:left; margin-right:10px; margin-bottom:5px;'>";
 					
 
-			        echo "<p class='boxhotnm'>$room[roomname]</p><br>";
+			        echo "<p class='boxhotnm'>$room[roomname]</p>";
+
+			        echo "<h6> &nbsp Price: $room[price] </h6>";
+
+			        echo " <a href='rmdetails.php?id=$room[id]'> <input style='position:relative;  left:100px' type='button' value='Details' class='btn btn-primary'> </a> ";
+
 
 			      	echo '</div>';
 			      echo '</div>';

@@ -24,9 +24,9 @@
 		global $dbName;
 		$conn = mysqli_connect( $serverName, $userName, $password, $dbName);
 		$result=mysqli_query($conn,$query);
-		mysqli_close($conn);
-		return $result;
-		echo "xxx";
+		mysqli_close($conn); 
+		return $result; //This have to convert array using mysqli_fetch_array(),,,  mysqli_fetch_assoc() is for associative array
+		
 	}
 	
 	function gettwo($query)
