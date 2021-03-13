@@ -113,7 +113,7 @@
                <li><a href="#"> &nbsp &nbsp News</a></li>
                <li><a href="#"> &nbsp &nbsp Contact us</a></li>
                <li><a href="#"> &nbsp &nbsp About</a></li>
-               <li><a href="/login"> &nbsp &nbspLog in</a></li>
+               <li><a href="/login"> &nbsp &nbspLog In</a></li>
             
             </ul>
 
