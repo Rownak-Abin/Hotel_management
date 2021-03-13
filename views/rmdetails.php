@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/sty.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body style="background-color: #EFFFFE;">
@@ -57,12 +58,49 @@
 
 		</div>	
 
-		<a class="rqstbtn" href=""><input type="button" value="Request Booking" class="btn btn-success" 
-			style="font-size: 20px; width: 220px; height:50px; box-shadow: 5px 6px 16px 3px rgba(0,0,0,0.33);"></a>
+		
 
 
 
 	</div>
+
+ <div style="position: absolute; top:130px">
+
+<div style="position: relative; height:370px; width:270px; background-color:#FAEBD7; top:0px; left:1170px; border: 1px solid #C0C0C0; border-radius: 5px;  box-shadow: 2px 5px 28px -11px rgba(0,0,0,0.75);">
+
+        
+       
+
+       <div style="position: relative;left:85px; color:#000;  font-size: 17px; top:10px">--Total Cost--</div>  <br>
+
+      
+       <input id="cost" value="<?php echo "$room[price]"; ?>" type="text" name="cos" style="position: relative; height:50px; padding:10px; width:220px;margin:5px 25px;  font-size: 20px;">     
+
+        <div style="position: relative;left:85px; color:#000;  font-size: 17px; top:-0px">--Nights--</div>  
+
+         
+
+        <input id="quan" type="number" value=1 min="0" max="40" step="1" style="position: relative; top:10px; left:25px; height: 50px; padding:10px; font-size: 20px; width:220px;"><br><br>
+
+          <div style="position: relative;left:85px; color:#000;  font-size: 17px; top:-0px">--Check-in--</div> 
+
+         <input type="date" id="dt"><br><br>
+
+        <input type="submit" name="submit" value="Request Booking" class="btn btn-success" style="position: relative; height:50px; width:220px;margin:10px 25px;  font-size: 20px;"> 
+
+       
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
 
 	 <div class="Sidenav">
    
@@ -85,4 +123,45 @@
       </div>
 	
 </body>
+
+
+                <script src="bootstrap-input-spinner.js"></script>      
+
+                <script>
+
+                  $(document).ready(function(){
+
+
+                var i =  $("#cost").val();
+
+                console.log(i);
+
+                
+
+
+               $(":input").on('keyup mouseup', function () {
+                    var q = $("#quan").val();
+                 
+                    var x = i*q;
+
+                   $("#cost").val(x);
+
+                  });
+
+                $("#dt").change(function(){
+                	
+                		var date = $("#dt").val();
+
+               			 console.log(date);
+                	
+               		
+
+               });
+
+            
+
+                 
+             });               	
+
+                </script>
 </html>
