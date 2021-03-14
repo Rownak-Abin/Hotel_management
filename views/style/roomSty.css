@@ -1,0 +1,167 @@
+body{
+	background-color: #EFFFFE;
+	overflow-x: hidden;
+}
+
+.outer-box{
+	position: relative; 
+	top:60px; 
+	left:80px; 
+	background-color: #E9FFEB; 
+	
+	border-radius: 8px; 
+	box-shadow: 2px 5px 28px -11px rgba(0,0,0,0.75);
+}
+
+#detbox{
+	position: absolute;
+	left: 340px;
+	top: 580px;
+	width:855px; 
+	height:350px; 
+	
+
+}
+
+.header-box{
+	position: absolute; 
+	background-color: #FF7F50; 
+	width:255px; 
+	height:45px;     
+	border-top-left-radius:8px; 
+	border-top-right-radius:8px;
+}
+
+#detinbox{
+	width:855px; 
+}
+
+.header-text{
+	color:#fff;
+	font-family:arial; 
+	position: absolute; 
+	left:75px;
+	top:10px; 
+	font-size: 21px
+}
+
+.options{
+	position: relative; 
+	left:70px; 
+	top:20px; 
+	font-size: 19px
+}
+
+.all{
+	
+	background-color: orange;
+	width: 250px;
+	height: 200px;
+	display: inline-block;
+            
+}
+
+.blc{
+
+	position: relative;
+	top: -20px;
+	background-color: pink;
+	 
+}
+
+.roombox{
+	background-color: white; 
+	width:280px; 
+	height:290px; 
+	margin-right: 1800px;
+	margin-bottom: 40px;
+	border:1px solid #69E7FF;
+	box-shadow: 5px 6px 16px 3px rgba(0,0,0,0.33);
+}
+
+.boxhotnm{
+	position: relative;
+	top: 5px;
+	left: 9px;
+	color:#8B4513; 
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/* details page */
+.roomdethead{
+    position: absolute; 
+    left:340px;
+    top:35px;
+    font-family:arial; 
+    color:#000;
+    font-size: 49px;
+    text-shadow: 2px 2px 5px red;
+}
+
+.roomdetpic{
+    border:solid black 1px; 
+    padding:2px;  
+    float:left; 
+    margin-right:10px; 
+    margin-bottom:5px;
+    box-shadow: 5px 6px 10px 3px rgba(0,0,0,0.33);
+}
+
+.complement{
+	font-size: 20px;
+	position: absolute;
+	top: 58px;
+	left: 30px;
+	color: #A52A2A;
+}
+
+.desc{
+	font-size: 18px;
+	position: absolute;
+	top: 110px;
+	left: 30px;
+	color: #000;
+	width: 700px;
+	text-align: justify;
+}
+
+.rqstbtn{
+	position: absolute;
+	left: 670px;
+	top: 1000px;
+	width: 200px;
+	font-size: 21px;
+}
+
+#dt{
+	position: relative;
+	left: 25px;
+	top: 10px;
+	width: 220px;
+}
+
+.regibtnrqst{
+
+	position:absolute; 
+	width:220px; 
+	height:50px; 
+	box-shadow: 5px 6px 16px 3px rgba(0,0,0,0.33);
+	font-size: 20px; 
+	top:220px; 
+	left:60px
+
+}
+
+.logbtnrqst{
+
+	position:absolute; 
+	width:220px; 
+	height:50px; 
+	box-shadow: 5px 6px 16px 3px rgba(0,0,0,0.33);
+	font-size: 20px; 
+	top:300px; 
+	left:60px
+
+}
+
