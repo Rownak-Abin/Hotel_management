@@ -74,6 +74,12 @@
 		require "../model/db_connect.php";
 		require "getallrooms.php";
 
+		if(isset($_GET['CusId'])){
+			$CusId = $_GET['CusId'];
+		}		
+				
+			
+
 		$rooms = getAllrooms();
 
 			
@@ -93,7 +99,7 @@
 
 			        echo "<h6> &nbsp Price: $room[price] </h6>";
 
-			        echo " <a href='rmdetails.php?id=$room[id]'> <input style='position:relative;  left:100px' type='button' value='Details' class='btn btn-primary'> </a> ";
+			        echo " <a href='rmdetails.php?id=$room[id]&CusId=$CusId'> <input style='position:relative;  left:100px' type='button' value='Details' class='btn btn-primary'> </a> ";
 
 
 			      	echo '</div>';
