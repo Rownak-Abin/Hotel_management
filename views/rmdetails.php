@@ -15,15 +15,17 @@
 	<?php
 
 	require "../model/db_connect.php";
+	require "../controllers/RegiController.php";
 	
 
-
 		$nm = null;
+		
 	
 		if(isset($_GET['id'])){
 			$nm = $_GET['id'];
 
 		}
+
 
 		$qr = "SELECT * FROM roomlist WHERE id=$nm";
 
@@ -31,10 +33,18 @@
 
 		$room = mysqli_fetch_array($r);
 
+		$rname = $room['roomname'];
+
+
+		if(isset($_POST['submit'])){
+		
+			getcusdata($rname);
+		}
+
 	
 
 	?>
-
+<form method="post">
 	<div class="roomdethead">
 		<p><?php echo "$room[roomname]"; ?></p>
 	</div>
@@ -58,9 +68,6 @@
 
 		</div>	
 
-		
-
-
 
 	</div>
 
@@ -80,21 +87,18 @@
 
          
 
-        <input id="quan" type="number" value=1 min="0" max="40" step="1" style="position: relative; top:10px; left:25px; height: 50px; padding:10px; font-size: 20px; width:220px;"><br><br>
+        <input type="number" name="qua" id="quan" value=1 min="0" max="40" step="1" style="position: relative; top:10px; left:25px; height: 50px; padding:10px; font-size: 20px; width:220px;"><br><br>
 
           <div style="position: relative;left:85px; color:#000;  font-size: 17px; top:-0px">--Check-in--</div> 
 
-         <input type="date" id="dt"><br><br>
+         <input type="date" id="dt" name="date"><br><br>
 
         <input type="submit" name="submit" value="Request Booking" class="btn btn-success" style="position: relative; height:50px; width:220px;margin:10px 25px;  font-size: 20px;"> 
-
-       
-
 
     </div>
 
 </div>
-
+</form>
 
 
 

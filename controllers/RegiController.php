@@ -29,6 +29,35 @@
 
 	}
 
+	function getcusdata($r){
+
+			$cusid = null;
+
+		if(isset($_GET['CusId'])){
+			$cusid = $_GET['CusId'];
+		}
+
+
+		$qr2 = "SELECT * FROM customers WHERE id=$cusid";
+
+		$resqu2 = get($qr2);
+
+		$CusDetails = mysqli_fetch_array($resqu2);
+
+		$cusnm = $CusDetails['cName'];
+		$cusphn = $CusDetails['phone'];
+		$cusemail = $CusDetails['email'];
+		$room = $r;
+
+		$checkin = $_POST['date'];
+		$nights = $_POST['qua'];
+
+		$query = "INSERT INTO cusrequests (CusName,	CusPhn,	CusEmail,	room,	checkin,	nights) 
+					VALUES ('$cusnm', '$cusphn', '$cusemail', '$room', '$checkin', '$nights')"; 
+
+			execute($query);
+	}
+
 
 
 
