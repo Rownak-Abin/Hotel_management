@@ -9,10 +9,12 @@
 
 		if(!empty($name) && !empty($email) && !empty($phn) && !empty($pass)){
 		
-		
+		//
 		$query="INSERT INTO customers (cName, email, phone,	password) 
 		VALUES('$name', '$email', '$phn', '$pass')";
+
 		execute($query);
+		//
 
 		$que = "SELECT * FROM customers WHERE email='$email'";
 
@@ -30,6 +32,8 @@
 	}
 
 	function getcusdata($r){
+
+		//requests room booking after logged in rmdetails page
 
 			$cusid = null;
 
@@ -56,6 +60,23 @@
 					VALUES ('$cusnm', '$cusphn', '$cusemail', '$room', '$checkin', '$nights')"; 
 
 			execute($query);
+
+			echo "<script> alert('Request Sent');
+					 window.location.href = 'CusDash.php?CusId=$cusid';
+					</script>";
+	}
+
+	function getdashcusdata($email){
+
+		$qu = "SELECT * FROM cusrequests WHERE CusEmail='$email'";
+
+		$data = get($qu);
+
+		$customer = mysqli_fetch_array($data);
+
+		return $customer;
+
+		
 	}
 
 

@@ -1,16 +1,12 @@
-
-
 .Rqbutton{
-	
-		 
-    border: none;
-    background: #00D4FF;
+	border: none;
+	background: #00D4FF;
 	width:215px;
-	
-    outline: none;
-    height: 135px;
+
+	outline: none;
+	height: 135px;
 	color: #000;
-    font-size: 16px;
+	font-size: 16px;
 	padding-left: 28px;
 	padding-right: 35px;
 	margin-left:50px;
@@ -19,78 +15,87 @@
 
 }
 
-
-
-
 .Rqbutton:hover{
-	
-    cursor: pointer;
-    background: #39dc79;
-    color: #000;
+	cursor: pointer;
+	background: #39dc79;
+	color: #000;
 	transform: scale(1.01);
 	box-shadow:2px 2px 6px rgba(0,0,0,0.3);
 }
-	
+
 
 .Sidenav{
-		position:absolute;
-		top:0px;
-		left: 0px;
-		width:15%;
-		height:1500px;
-		
-		box-sizing: border-box;
-		background:#F4A460;
-		opacity:1;
-		padding-left:  10px;
-		padding-right:  10px;		
-		
-	}
-	.Sidenav ul{
-		
-		list-style:none;
-        position: relative;
-        top: -100px;
-		
-	}
-	
+	position:absolute;
+	top:0px;
+	left: 0px;
+	width:15%;
+	height:1500px;
+
+	box-sizing: border-box;
+	background:#F4A460;
+	opacity:1;
+	padding-left:  10px;
+	padding-right:  10px;		
+
+}
+.Sidenav ul{
+
+	list-style:none;
+	position: relative;
+	top: -100px;
+
+}
+
 .Sidenav ul li a{
-	
-				line-height:80px;
-				color:#F5FFFA;
-				padding:10px;
-				text-decoration:none;
-				 font-family: sans-serif;
-				font-size:17px;
-				font-weight:bold;
-				padding-top:30px;
-	
+
+	line-height:80px;
+	color:#F5FFFA;
+	padding:10px;
+	text-decoration:none;
+	 font-family: sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	padding-top:30px;
+
 }
 	
-	.Sidenav ul li a:hover{
-		
-				
-				background:#00008B;
-				box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3,
-				0 0 10px #2196f3; 
-		
-		
-	}
+.Sidenav ul li a:hover{
+
 	
+	background:#00008B;
+	box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3,
+	0 0 10px #2196f3; 
+
+
+}
 
 
 
-		.frame{	
-			position:relative;
-			left: 300px;
-			top: 10px;
-			width: 1000px;
-			height: 170px;  
-			background:	#CCFFFF;
-			box-sizing: border-box;
-			padding-top: 15px;
-			padding-left:21px;
-		
-		}
+
+.frame{	
+	position:relative;
+	left: 300px;
+	top: 10px;
+	width: 1000px;
+	height: 170px;  
+	background:	#CCFFFF;
+	box-sizing: border-box;
+	padding-top: 15px;
+	padding-left:21px;
+
+}
+
+.dashdiv{
+	position: absolute; 
+	left:280px; 
+	top:110px; 
+	width:900px; 
+	height:280px; 
+	background-color: #FFFFCC; 
+	border-radius: 15px; 
+	box-shadow: 2px 5px 28px -11px rgba(0,0,0,0.75);
+	font-family: arial;
+	color: #800000;
+}
 
 
