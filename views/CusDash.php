@@ -1,3 +1,17 @@
+<?php
+	session_start();
+	
+		if(!isset($_SESSION['loggedinuser']))
+    	{
+    	    
+		//header("Location:../index.php");
+		echo("<script>location.href = 'Login.php'</script>");
+		
+    	}
+	
+	
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -112,6 +126,8 @@
 
 		</div>					
 	</div>
+
+	<a href='Logout.php'> <input type='button' value='Logout' class='logbutt btn btn-danger'> </a>
 
 	
 			<br>

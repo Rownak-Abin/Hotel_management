@@ -10,7 +10,7 @@
 		if(!empty($name) && !empty($email) && !empty($phn) && !empty($pass)){
 		
 		//
-		$query="INSERT INTO customers (cName, email, phone,	password) 
+		$query="INSERT INTO users (cName, email, phone,	password) 
 		VALUES('$name', '$email', '$phn', '$pass')";
 
 		execute($query);
@@ -42,7 +42,7 @@
 		}
 
 
-		$qr2 = "SELECT * FROM customers WHERE id=$cusid";
+		$qr2 = "SELECT * FROM users WHERE id=$cusid";
 
 		$resqu2 = get($qr2);
 

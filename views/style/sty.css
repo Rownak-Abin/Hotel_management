@@ -5,7 +5,7 @@ body{
 
 .outer-box{
 	position: relative; 
-	top:60px; 
+	top:55px; 
 	left:80px; 
 	background-color: #E9FFEB; 
 	width:255px; 
@@ -144,10 +144,22 @@ body{
 
 .dashbutt{
 	position:relative; 
-	top:65px;
+	top:60px;
 	width:255px; 
 	left:80px;
 	height:50px; 
 	box-shadow: 5px 6px 10px 3px rgba(0,0,0,0.23);
 	font-size: 20px;
+}
+
+.logbutt{
+
+	position:relative; 
+	top:70px;
+	width:255px; 
+	left:80px;
+	height:40px; 
+	box-shadow: 5px 6px 10px 3px rgba(0,0,0,0.23);
+	font-size: 20px;
+
 }

@@ -18,6 +18,11 @@
 	$t = $_POST['type'];
 	$f = $_POST['floor'];
 
+	if(isset($_GET['CusId'])){
+			$CusId = $_GET['CusId'];
+		}				
+
+
 	$q = "SELECT * FROM roomlist WHERE size='$s' AND type='$t' AND floor='$f'";
 
 	$result = get($q);
@@ -41,6 +46,8 @@
 			        echo "<p class='boxhotnm'>$row[roomname]</p>";
 
 			       echo "<h6> &nbsp Price: $row[price] </h6>";
+
+			        echo " <a href='rmdetails.php?id=$row[id]&CusId=$CusId'> <input style='position:relative;  left:100px' type='button' value='Details' class='btn btn-primary'> </a> ";
 
 			      	echo '</div>';
 			      echo '</div>';

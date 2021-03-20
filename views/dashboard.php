@@ -1,3 +1,17 @@
+<?php
+	session_start();
+	
+		if(!isset($_SESSION['loggedinuser']))
+    	{
+    	    
+		//header("Location:../index.php");
+		echo("<script>location.href = 'Login.php'</script>");
+		
+    	}
+	
+	
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +33,7 @@
 			$Cus = $_GET['CusId'];
 		}
 
-		$que = "SELECT * FROM customers WHERE id=$Cus";
+		$que = "SELECT * FROM users WHERE id=$Cus";
 
 		$res = get($que);
 
@@ -41,7 +55,7 @@
 
 	?>
 
-	<h1 style="position: relative; left:280px">Dashboard</h1><hr>
+	<h1 style="position: relative; font-family: arial; left:280px">Dashboard</h1><hr>
 
 
 <div class="dashdiv"><br>
@@ -71,7 +85,7 @@
                <li><a href="#"> &nbsp &nbsp News</a></li>
                <li><a href="#"> &nbsp &nbsp Contact us</a></li>
                <li><a href="#"> &nbsp &nbsp About</a></li>
-               <li><a href="/login"> &nbsp &nbspLog in</a></li>
+               <li><a href="Logout.php"> &nbsp &nbspLog Out</a></li>
             
             </ul>
 
