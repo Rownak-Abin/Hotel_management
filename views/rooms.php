@@ -32,7 +32,7 @@
 
 	<?php
 		require "../model/db_connect.php";
-		require "getallrooms.php";
+		require "getAllElements.php";
 
 		$rooms = getAllrooms();
 

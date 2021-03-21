@@ -1,10 +1,9 @@
 .Rqbutton{
 	border: none;
 	background: #00D4FF;
-	width:215px;
-
+	width:120px;
 	outline: none;
-	height: 135px;
+	height: 40px;
 	color: #000;
 	font-size: 16px;
 	padding-left: 28px;
@@ -50,19 +49,20 @@
 
 	line-height:80px;
 	color:#F5FFFA;
-	padding:10px;
+	padding:5px;
 	text-decoration:none;
 	 font-family: sans-serif;
 	font-size:17px;
 	font-weight:bold;
-	padding-top:30px;
+	
 
 }
 	
 .Sidenav ul li a:hover{
 
 	
-	background:#00008B;
+	background:green;
+	opacity: 0.4;
 	box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3,
 	0 0 10px #2196f3; 
 
@@ -86,9 +86,9 @@
 }
 
 .dashdiv{
-	position: absolute; 
+	position: relative; 
 	left:280px; 
-	top:110px; 
+	top:10px; 
 	width:900px; 
 	height:280px; 
 	background-color: #FFFFCC; 
@@ -96,6 +96,8 @@
 	box-shadow: 2px 5px 28px -11px rgba(0,0,0,0.75);
 	font-family: arial;
 	color: #800000;
+	font-size: 16px;
+	padding: 20px;
 }
 
 

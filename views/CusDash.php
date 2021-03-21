@@ -3,9 +3,8 @@
 	
 		if(!isset($_SESSION['loggedinuser']))
     	{
-    	    
-		//header("Location:../index.php");
-		echo("<script>location.href = 'Login.php'</script>");
+ 
+			echo("<script>location.href = 'Login.php'</script>");
 		
     	}
 	

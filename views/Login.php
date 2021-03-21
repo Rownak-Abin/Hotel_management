@@ -61,7 +61,7 @@
 				}
 				else if($Custype=="admin"){
 
-					echo "welcome admin";
+					echo("<script>location.href = 'Admin.php'</script>");
 				}	
 				
 				}
