@@ -24,17 +24,20 @@
 </head>
 <body>
 
+	
 	<div id="mainbx" style="position: absolute; top:60px; left:420px">
 
 	<?php
 		require "../model/db_connect.php";
-		require "getallrooms.php";
+		require "getAllElements.php";
 
 		if(isset($_GET['CusId'])){
 			$CusId = $_GET['CusId'];
 		}				
 
 		$rooms = getAllrooms();
+
+		echo "";
 
 			
 		$i = 0;
@@ -127,6 +130,7 @@
 	</div>
 
 	<a href='Logout.php'> <input type='button' value='Logout' class='logbutt btn btn-danger'> </a>
+	<input type='hidden' name='hid' value='<?php echo $CusId; ?>'>
 
 	
 			<br>
@@ -140,16 +144,20 @@
 	 $(document).ready(function(){
 	$('input[name="size"] ,input[name="type"],input[name="floor"]').click(function(){ 
 
+
 		var a = $('input[name="size"]:checked').val();
 		var b = $('input[name="type"]:checked').val();
 		var c = $('input[name="floor"]:checked').val();
+		var cusid = $('input[name="hid"]').val();
+
+		console.log(cusid);
 		
 
     $.ajax({
 
     	url: "fetchdata.php",
         type: "POST",
-        data: {size:a, type:b, floor:c},
+        data: {size:a, type:b, floor:c, Cus:cusid},
         success: function( response ) {
         	
         	$("#mainbx").html(response);

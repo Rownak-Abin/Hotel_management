@@ -17,10 +17,7 @@
 	$s = $_POST['size'];
 	$t = $_POST['type'];
 	$f = $_POST['floor'];
-
-	if(isset($_GET['CusId'])){
-			$CusId = $_GET['CusId'];
-		}				
+	$CusId = $_POST['Cus'];
 
 
 	$q = "SELECT * FROM roomlist WHERE size='$s' AND type='$t' AND floor='$f'";
@@ -61,5 +58,6 @@
 	}
 
 	?>
+
 
 	</html>

@@ -17,9 +17,9 @@
 
 		<p style="position: absolute; color:#FFDEAD;font-size: 40px; top:110px; left:60px">For Details</p>
 
-	<a href='#'> <input  type='button' value='Register' class='btn btn-success regibtnrqst'> </a>
+	<a href='Regi.php'> <input  type='button' value='Register' class='btn btn-success regibtnrqst'> </a>
 
-		<a href='#'> <input  type='button' value='Log In' class='btn btn-primary logbtnrqst'> </a>
+		<a href='Login.php'> <input  type='button' value='Log In' class='btn btn-primary logbtnrqst'> </a>
 
 	</div>
 
