@@ -1,14 +1,8 @@
 <?php
 	session_start();
 	
-		if(!isset($_SESSION['loggedinuser']))
+		if(isset($_SESSION['loggedinuser']) || isset($_SESSION['regiuser']))
     	{
- 
-			echo("<script>location.href = 'Login.php'</script>");
-		
-    	}
-	
-	
 ?>
 
 <!DOCTYPE html>
@@ -29,15 +23,13 @@
 
 	<?php
 		require "../model/db_connect.php";
-		require "getAllElements.php";
+		require "../controllers/getAllElements.php";
 
 		if(isset($_GET['CusId'])){
 			$CusId = $_GET['CusId'];
 		}				
 
 		$rooms = getAllrooms();
-
-		echo "";
 
 			
 		$i = 0;
@@ -155,7 +147,7 @@
 
     $.ajax({
 
-    	url: "fetchdata.php",
+    	url: "../controllers/fetchdata.php",
         type: "POST",
         data: {size:a, type:b, floor:c, Cus:cusid},
         success: function( response ) {
@@ -170,3 +162,12 @@
 <!--  -->
 
 </html>
+
+<?php
+	}
+	else{
+		echo("<script>location.href = 'Login.php'</script>");
+		
+    	}
+
+?>

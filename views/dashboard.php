@@ -1,14 +1,8 @@
 <?php
 	session_start();
 	
-		if(!isset($_SESSION['loggedinuser']))
+		if(isset($_SESSION['loggedinuser']) || isset($_SESSION['regiuser']))
     	{
-    	    
-		//header("Location:../index.php");
-		echo("<script>location.href = 'Login.php'</script>");
-		
-    	}
-	
 	
 ?>
 
@@ -55,6 +49,19 @@
 
 	?>
 
+	<?php 
+		if($dashdata==null){
+			$d=0;
+			echo "<div style='position:relative; color:red; font-size:35px; left:500px; top:180px;'> You have not requested for any room yet.. </div>";
+					
+		}
+
+		else{
+
+
+
+	?>
+
 	<h1 style="position: relative; font-family: arial; left:280px">Dashboard</h1><hr>
 
 
@@ -71,6 +78,10 @@
 	<h3 style="position:relative; left:40px">Status: <label style='color:red'><?php echo $dashdata['status'];?></label> </h3>
 
 </div>
+
+<?php
+	}
+?>
 
 
 
@@ -96,3 +107,12 @@
 	
 </body>
 </html>
+
+<?php
+	}
+	else{
+		echo("<script>location.href = 'Login.php'</script>");
+		
+    	}
+
+?>

@@ -13,9 +13,9 @@
 
 
 
-	<div style="background-color:#F4A460; width:320px; height:2000px">
+	<div style="background-color:#F4A460; width:300px; height:2000px">
 
-		<p style="position: absolute; color:#FFDEAD;font-size: 40px; top:110px; left:60px">For Details</p>
+		<p style="position: absolute; color:#FFDEAD;font-size: 40px; top:110px; left:55px">For Details</p>
 
 	<a href='Regi.php'> <input  type='button' value='Register' class='btn btn-success regibtnrqst'> </a>
 
@@ -32,7 +32,7 @@
 
 	<?php
 		require "../model/db_connect.php";
-		require "getAllElements.php";
+		require "../controllers/getAllElements.php";
 
 		$rooms = getAllrooms();
 

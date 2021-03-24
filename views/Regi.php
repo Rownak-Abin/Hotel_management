@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +18,8 @@
 	require "../controllers/RegiController.php";
 
 	if(isset($_POST['submit'])){
+
+			
 		
 			registration();
 			

@@ -79,10 +79,7 @@
 				$invalid="Invalid Login";
 				
 			}
-		}
-		
-		
-		
+		}	
 		
 ?>
 
@@ -96,7 +93,7 @@
 	<form method="POST">
 	    
 	    
-	<a href="../index.php" style="position:absolute;  left:1450px; top:30px;"><input style="background:	#FFFACD; border:none;" type="button" value="X" ></a>
+	<a href="index.html" style="position:absolute;  left:1450px; top:30px;"><input style="background:	#FFFACD; border:none;" type="button" value="X" ></a>
 	
     <div class="login-box">
     <img src="imgs/avatar.png" class="avatar">
@@ -120,20 +117,8 @@
             </form>
         
         
-        </div>
-		
-		
+        </div>	
     
     </body>
 </html>
 
-<!-- 
-				$_SESSION['loggedinuser'] = $un;
-				
-				
-				$row=mysqli_fetch_assoc($result);*/
-				/*$cat=$row["category"];
-				
-				if($cat=="Admin"){*/
-				    
-				//header('Location:/Author.php'); -->

@@ -6,6 +6,8 @@
 		$phn = $_POST["Phone"];
 		$pass = $_POST["password"];
 
+		$_SESSION['regiuser'] = $name;
+
 
 		if(!empty($name) && !empty($email) && !empty($phn) && !empty($pass)){
 		
@@ -16,7 +18,7 @@
 		execute($query);
 		//
 
-		$que = "SELECT * FROM customers WHERE email='$email'";
+		$que = "SELECT * FROM users WHERE email='$email'";
 
 		$getid = get($que);
 

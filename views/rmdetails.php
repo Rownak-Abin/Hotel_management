@@ -1,14 +1,8 @@
 <?php
 	session_start();
 	
-		if(!isset($_SESSION['loggedinuser']))
+		if(isset($_SESSION['loggedinuser']) || isset($_SESSION['regiuser']))
     	{
-    	    
-		//header("Location:../index.php");
-		echo("<script>location.href = 'Login.php'</script>");
-		
-    	}
-	
 	
 ?>
 
@@ -183,3 +177,12 @@
 
                 </script>
 </html>
+
+<?php
+	}
+	else{
+		echo("<script>location.href = 'Login.php'</script>");
+		
+    	}
+
+?>

@@ -30,7 +30,7 @@
 <?php
 
 	require "../model/db_connect.php";
-	require "getAllElements.php";
+	require "../controllers/getAllElements.php";
 
 	$Allreqs = getAllrequests();
 
