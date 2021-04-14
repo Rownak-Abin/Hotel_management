@@ -70,7 +70,7 @@
 
 	<div class="outer-box" style="height:180px;">
 		<div class="header-box">
-			<strong class="header-text"> Room Size &nbsp &nbsp  </strong> <br><br>
+			<strong class="header-text" id="rs"> Room Size &nbsp &nbsp  </strong> <br><br>
 
 			<div class="options">
 				
@@ -141,8 +141,10 @@
 		var b = $('input[name="type"]:checked').val();
 		var c = $('input[name="floor"]:checked').val();
 		var cusid = $('input[name="hid"]').val();
+		var n = document.querySelector("#rs").textContent;
 
 		console.log(cusid);
+		console.log(n);
 		
 
     $.ajax({

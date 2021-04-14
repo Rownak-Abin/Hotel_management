@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="colorlibcopy-agile">
-			<p>© 2021 All Rights Reserved By Rownak Abin</a></p>
+			
 		</div>
 		<ul class="colorlib-bubbles">
 			<li></li>

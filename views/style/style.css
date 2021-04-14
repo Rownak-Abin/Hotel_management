@@ -31,7 +31,7 @@
 	height:1500px;
 
 	box-sizing: border-box;
-	background:#F4A460;
+	background:#B22222;
 	opacity:1;
 	padding-left:  10px;
 	padding-right:  10px;		
@@ -99,5 +99,22 @@
 	font-size: 16px;
 	padding: 20px;
 }
+
+.cmntdiv{
+	position: relative; 
+	left:280px; 
+	top:40px; 
+	width:880px; 
+	height: 160px; 
+	background-color: #FFFFCC; 
+	border-radius: 15px; 
+	box-shadow: 2px 5px 28px -11px rgba(0,0,0,0.75);
+	font-family: arial;
+	color: #800000;
+	font-size: 16px;
+	padding-left: 60px;
+	padding-top: 10px;
+}
+
 
 
