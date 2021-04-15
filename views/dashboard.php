@@ -119,7 +119,7 @@
 
 </form>
 
-	<!--  <div class="Sidenav">
+	 <div class="Sidenav">
    
          <nav>
  
@@ -137,7 +137,7 @@
    
          </nav>
 
-      </div> -->
+      </div>
 	
 </body>
 
