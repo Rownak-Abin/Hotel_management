@@ -22,9 +22,11 @@
 </head>
 <body>
 
+	<a href='#'> <input style='position:relative; width:160px; left:200px' type='button' value='Add New Room' class='Rqbutton'> 
+
 	<form method="post">
 
-	<label style="position: absolute; top:20px; font-family: arial; font-size: 35px; left:260px">Requests</label><br><br><br>
+	<label style="position: relative; top:20px; font-family: arial; font-size: 35px; left:260px">Requests</label><br><br><br>
 	<hr>
 
 <?php
